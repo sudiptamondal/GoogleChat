@@ -1,0 +1,33 @@
+%h2 Simple Gtalk Chat client 
+.left_container
+  .user_data_container
+    %h4 Enter your username, password of Gtalk.
+    %ul
+      %li Enter your E-mail address
+      %li
+        %input{:type=>"text", :placeholder=>"email address", :name=>"user[email]"}
+      %li Enter your password
+      %li 
+        %input{:type=>"password", :placeholder=>"password", :name=>"user[password]"}
+  %hr
+  .recepient_data
+    %ul
+      %li Enter the receiver's mail address
+      %li
+        %input{:type=>"text", :placeholder=>"email address", :name=>"receiver[email]"}
+      %li Enter your message and click on submit
+      %li
+        %textarea{:placeholder=>"Enter your message here", :name=>"receiver[message]"}
+  %input#submit_message{:type=>"submit", :value=>"submit"}
+.right_container
+  %h4 ChatBox
+  #spinningSquaresG
+    #spinningSquaresG_1.spinningSquaresG.pull-left
+    #spinningSquaresG_2.spinningSquaresG.pull-left
+    #spinningSquaresG_3.spinningSquaresG.pull-left
+    #spinningSquaresG_4.spinningSquaresG.pull-left
+    #spinningSquaresG_5.spinningSquaresG.pull-left
+    #spinningSquaresG_6.spinningSquaresG.pull-left
+    #spinningSquaresG_7.spinningSquaresG.pull-left
+    #spinningSquaresG_8.spinningSquaresG.pull-left
+  %ul

@@ -1,0 +1,4 @@
+- html_string = ""
+- @chats.each do |chat|
+  - html_string = html_string + '<li><label>' + chat.from + ' : </label> ' + '<p>' + chat.message + '</p></li>' 
+$(".right_container ul").append("#{html_string.html_safe}")
